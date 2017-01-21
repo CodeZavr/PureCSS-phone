@@ -1,0 +1,117 @@
+/*
+================================================================================
+|                                    RESET                                     |
+================================================================================
+*/
+body{ margin:0px; padding:0px; font-family:Tahoma,Arial, sans-serif;background-color:#FFFFFF; height:100%; position:relative; font-size:13px!important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+/* =========== MAIN =========== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; }
+
+/* =========== HTML5 display-role reset for older browsers =========== */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
+html{height:100%; -webkit-text-size-adjust: none;-ms-text-size-adjust: none;}
+*{box-sizing:border-box;}
+*:before,*:after{box-sizing:border-box;}
+
+/*
+================================================================================
+|                                     PHONE CSS                                |
+================================================================================
+*/
+
+.main {
+	width: 196px;
+	height: 386px;
+	background: #f5f5f5;
+	border-radius: 30px;
+	box-shadow: 0px 2px 5px 0 #b3b3b3;
+	position: absolute;
+	overflow: hidden;
+
+	/* custom styles */
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.main:before, .main:after {
+	content: "";
+	position: absolute;
+}
+
+.main:before {
+	top: 24px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 26px;
+	height: 2px;
+	background: #828282;
+	box-shadow: 0 0 2px 0 #8c8c8c;
+}
+
+.main:after {
+	top: 24px;
+	left: calc(50% - 28px);
+	-webkit-transform: translate(-50%, -35%);
+	        transform: translate(-50%, -35%);
+	width: 6px;
+	height: 6px;
+	background: #686868;
+	border-radius: 50%;
+	box-shadow: 0 0 2px 0px #404040;
+}
+
+.main > div:first-child {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.main > div:first-child:before, .main > div:first-child:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.main > div:first-child:before {
+	width: 2px;
+	height: 2px;
+	top: 13px;
+	background: #6a6a6a;
+	border-radius: 50%;
+	box-shadow: 0 0 2px 0px #1b1b1b;
+}
+
+.main > div:first-child:after {
+	width: 35px;
+	height: 35px;
+	bottom: 11px;
+	border: 2px solid #898989;
+	border-radius: 50%;
+	box-shadow: 0 0 3px 0px #bdbdbd;
+}
+
+/* ============= PHONE SCREEN ============= */
+
+.main .inner {
+	position: absolute;
+	left: 50%;
+	bottom: 53px;
+	width: 179px;
+	height: 283px;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	background: #696969;
+	border-top: 1px solid #868686;
+	border-bottom: 1px solid #bcbcbc;
+	box-shadow: inset 0px 2px 5px 0px rgb(86, 86, 86);
+}
